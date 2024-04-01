@@ -1,0 +1,5 @@
+.venv
+__pycache__/
+
+# data base
+db.sqlite3
