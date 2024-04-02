@@ -1,0 +1,16 @@
+<!--En este código, se está mostrando el contenido de un formulario 
+    en un archivo HTML utilizando la sintaxis de Django. La variable 
+    form.content contiene el contenido ingresado por el usuario en el 
+    formulario y se muestra en la página web. El texto "content" está 
+    encerrado entre doble llaves '{ { } }', lo cual indica que es una 
+    variable de Django que se renderizará en el HTML final.-->
+<form method='POST'>
+    {% csrf_token %}
+    title{{form.title}}
+    <br>
+    content{{form.content}}
+    <br>
+    <!--El botón de tipo submit envía el formulario al servidor para
+        ser procesado.-->
+    <button type='submit'>Submit</button>
+</form>
